@@ -1,0 +1,1413 @@
+<!--
+=========================================================
+* Soft UI Dashboard - v1.0.5
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/images/logo3.png">
+  <title>
+    Gestion F.A.B.B
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.5" rel="stylesheet" />
+  <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Matchs</p>
+                    <h5 class="font-weight-bolder mb-0" id="matchs">
+                      
+                      </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Matchs Terminés</p>
+                    <h5 class="font-weight-bolder mb-0" id="matcht">
+                      
+                      </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Matchs Programeés</p>
+                    <h5 class="font-weight-bolder mb-0" id="matchp">
+                      
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Matchs Programeés aujourdui</p>
+                    <h5 class="font-weight-bolder mb-0" id="matchpa">
+                    
+                 
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="row mt-4">
+        <div class="col-lg-6 mb-lg-0 mb-4">
+          <div class="card z-index-2">
+            <div class="card-body p-3">
+
+              <h6 class="ms-2 mt-4 mb-0">Fabb APP Mobile</h6>
+              <div class="container border-radius-lg">
+                <div class="row">
+                  <div class="col-4 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <div class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-primary text-center me-2 d-flex align-items-center justify-content-center">
+                       
+                      </div>
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Equipes</p>
+                    </div>
+                    <h4 class="font-weight-bolder" id="utili"></h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-4 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <div class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-info text-center me-2 d-flex align-items-center justify-content-center">
+                        <svg width="10px" height="10px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>spaceship</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                              <g transform="translate(1716.000000, 291.000000)">
+                                <g transform="translate(4.000000, 301.000000)">
+                                  <path class="color-background" d="M39.3,0.706666667 C38.9660984,0.370464027 38.5048767,0.192278529 38.0316667,0.216666667 C14.6516667,1.43666667 6.015,22.2633333 5.93166667,22.4733333 C5.68236407,23.0926189 5.82664679,23.8009159 6.29833333,24.2733333 L15.7266667,33.7016667 C16.2013871,34.1756798 16.9140329,34.3188658 17.535,34.065 C17.7433333,33.98 38.4583333,25.2466667 39.7816667,1.97666667 C39.8087196,1.50414529 39.6335979,1.04240574 39.3,0.706666667 Z M25.69,19.0233333 C24.7367525,19.9768687 23.3029475,20.2622391 22.0572426,19.7463614 C20.8115377,19.2304837 19.9992882,18.0149658 19.9992882,16.6666667 C19.9992882,15.3183676 20.8115377,14.1028496 22.0572426,13.5869719 C23.3029475,13.0710943 24.7367525,13.3564646 25.69,14.31 C26.9912731,15.6116662 26.9912731,17.7216672 25.69,19.0233333 L25.69,19.0233333 Z"></path>
+                                  <path class="color-background" d="M1.855,31.4066667 C3.05106558,30.2024182 4.79973884,29.7296005 6.43969145,30.1670277 C8.07964407,30.6044549 9.36054508,31.8853559 9.7979723,33.5253085 C10.2353995,35.1652612 9.76258177,36.9139344 8.55833333,38.11 C6.70666667,39.9616667 0,40 0,40 C0,40 0,33.2566667 1.855,31.4066667 Z"></path>
+                                  <path class="color-background" d="M17.2616667,3.90166667 C12.4943643,3.07192755 7.62174065,4.61673894 4.20333333,8.04166667 C3.31200265,8.94126033 2.53706177,9.94913142 1.89666667,11.0416667 C1.5109569,11.6966059 1.61721591,12.5295394 2.155,13.0666667 L5.47,16.3833333 C8.55036617,11.4946947 12.5559074,7.25476565 17.2616667,3.90166667 L17.2616667,3.90166667 Z" opacity="0.598539807"></path>
+                                  <path class="color-background" d="M36.0983333,22.7383333 C36.9280725,27.5056357 35.3832611,32.3782594 31.9583333,35.7966667 C31.0587397,36.6879974 30.0508686,37.4629382 28.9583333,38.1033333 C28.3033941,38.4890431 27.4704606,38.3827841 26.9333333,37.845 L23.6166667,34.53 C28.5053053,31.4496338 32.7452344,27.4440926 36.0983333,22.7383333 L36.0983333,22.7383333 Z" opacity="0.598539807"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Joueurs</p>
+                    </div>
+                    <h4 class="font-weight-bolder" id="joueurs"></h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-4 py-3 ps-0">
+                    <div class="d-flex mb-2">
+                      <div class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-warning text-center me-2 d-flex align-items-center justify-content-center">
+                        <svg width="10px" height="10px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>credit-card</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                              <g transform="translate(1716.000000, 291.000000)">
+                                <g transform="translate(453.000000, 454.000000)">
+                                  <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" opacity="0.593633743"></path>
+                                  <path class="color-background" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Actualités</p>
+                    </div>
+                    <h4 class="font-weight-bolder" id="actu"></h4>
+                    <div class="progress w-75">
+                      <div class="progress-bar bg-dark w-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card z-index-2">
+            <div class="card-body p-8" id="container" style="position: static;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col-lg-6 col-7">
+                  <h6>Projects</h6>
+                  <p class="text-sm mb-0">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span class="font-weight-bold ms-1">30 done</span> this month
+                  </p>
+                </div>
+                <div class="col-lg-6 col-5 my-auto text-end">
+                  <div class="dropdown float-lg-end pe-4">
+                    <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-ellipsis-v text-secondary"></i>
+                    </a>
+                    <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive">
+                <table id="tabel_CoverTrans_details" class="table table-bordered  table-hover js-basic-example dataTable " >
+                  <thead class="thead-dark" style="font-weight: bold;">
+                      <th>#</th>
+                      <th>Club</th> 
+                      <th>Joueurs</th>
+                      <th>Entraîneur</th>
+                      <th>Selection Nationale</th>
+                
+                  
+                  </thead>
+                  <span>
+                        <tbody id="tbody1">
+                  </tbody></span>
+                
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <div class="card-header pb-0">
+              <h6>Orders overview</h6>
+              <p class="text-sm">
+                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                <span class="font-weight-bold">24%</span> this month
+              </p>
+            </div>
+            <div class="card-body p-3">
+              <div class="timeline timeline-one-side">
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="ni ni-bell-55 text-success text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">$2400, Design changes</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="ni ni-html5 text-danger text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="ni ni-cart text-info text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Server payments for April</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="ni ni-credit-card text-warning text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New card added for order #4395133</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="ni ni-key-25 text-primary text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Unlock packages for development</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM</p>
+                  </div>
+                </div>
+                <div class="timeline-block">
+                  <span class="timeline-step">
+                    <i class="ni ni-money-coins text-dark text-gradient"></i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </main>
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script>
+    var ctx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: "Sales",
+          tension: 0.4,
+          borderWidth: 0,
+          borderRadius: 4,
+          borderSkipped: false,
+          backgroundColor: "#fff",
+          data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+          maxBarThickness: 6
+        }, ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 500,
+              beginAtZero: true,
+              padding: 15,
+              font: {
+                size: 14,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+              color: "#fff"
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false
+            },
+            ticks: {
+              display: false
+            },
+          },
+        },
+      },
+    });
+
+
+    var ctx2 = document.getElementById("chart-line").getContext("2d");
+
+    var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
+    gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
+
+    var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+    gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+    gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+    gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+    new Chart(ctx2, {
+      type: "line",
+      data: {
+        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+            label: "Mobile apps",
+            tension: 0.4,
+            borderWidth: 0,
+            pointRadius: 0,
+            borderColor: "#cb0c9f",
+            borderWidth: 3,
+            backgroundColor: gradientStroke1,
+            fill: true,
+            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+            maxBarThickness: 6
+
+          },
+          {
+            label: "Websites",
+            tension: 0.4,
+            borderWidth: 0,
+            pointRadius: 0,
+            borderColor: "#3A416F",
+            borderWidth: 3,
+            backgroundColor: gradientStroke2,
+            fill: true,
+            data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+            maxBarThickness: 6
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              padding: 10,
+              color: '#b2b9bf',
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+              borderDash: [5, 5]
+            },
+            ticks: {
+              display: true,
+              color: '#b2b9bf',
+              padding: 20,
+              font: {
+                size: 11,
+                family: "Open Sans",
+                style: 'normal',
+                lineHeight: 2
+              },
+            }
+          },
+        },
+      },
+    });
+  </script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+
+  <script type="module">
+  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+ 
+   const firebaseConfig = {
+     apiKey: "AIzaSyAVpkaI_1x5d4ItI4kaiN2xOxPmXH_wjnE",
+     authDomain: "yatosama-demo.firebaseapp.com",
+     databaseURL: "https://yatosama-demo-default-rtdb.europe-west1.firebasedatabase.app",
+     projectId: "yatosama-demo",
+     storageBucket: "yatosama-demo.appspot.com",
+     messagingSenderId: "440036821979",
+     appId: "1:440036821979:web:0436e491278d04d78375fe",
+     measurementId: "G-4XHSQ4HZXZ"
+   };
+ 
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+   const analytics = getAnalytics(app);
+ 
+   import{
+       getFirestore, doc, onSnapshot, getDoc, setDoc, collection, addDoc, updateDoc, deleteDoc, deleteField, query, where , getDocs, orderBy, limit
+   }
+   from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
+   import{
+        getStorage, ref as sRef, uploadBytesResumable, getDownloadURL  }
+   from "https://www.gstatic.com/firebasejs/9.6.8/firebase-storage.js";
+   import { getAuth, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
+ 
+  const db = getFirestore();
+ //------------------------------------------------//
+ 
+ 
+ var clubnom = document.getElementById('clubbox');
+ var clubcl = document.getElementById('clubbox2');
+ var fond = document.getElementById('fondbox');
+ var defaites = document.getElementById('defaitesbox');
+ var entraineur = document.getElementById('entraineurbox');
+ var nom = document.getElementById('nombox');
+ var president = document.getElementById('presidentbox');
+ var victoires = document.getElementById('victoiresbox');
+ var pp = document.getElementById('ppbox');
+ var pa = document.getElementById('pabox');
+ var pc = document.getElementById('pcbox');
+ var ville = document.getElementById('villebox');
+ var clubnom2 = document.getElementById('club');
+ var fond2 = document.getElementById('fond');
+ var entraineur2 = document.getElementById('entraineur');
+ var nom2 = document.getElementById('nom');
+ var president2 = document.getElementById('president');
+ var ville2 = document.getElementById('ville');
+ var save = document.getElementById('save');
+ var savecl = document.getElementById('savecl');
+ var drop = document.getElementById('drop');
+ var searchbox = document.getElementById('searchbox');
+ const search = document.getElementById('search');
+ var searchboxx = document.getElementById('searchboxx');
+ const searchx = document.getElementById('searchx');
+ var cle = document.getElementById('index');
+ var cle2 = document.getElementById('indexx');
+ var clubnames = [];
+ var clubclass = [];
+ const tBody = document.getElementById('tbody1');
+ const tBody2 = document.getElementById('tbody2');
+ const tBody3 = document.getElementById('tbody3');
+ const ref = collection(db, "Equipe");
+ var cmp =0;
+ var cmp1 =0;
+ var cmp2 =0;
+ //--------------------filling table-----------------------//
+ var mca2=0;
+var osbba2=0;
+var  usma2=0;
+var ob2=0;
+var  crbdb2=0;
+var  wob2=0;
+var  cscdk2=0;
+var  irbba2=0;
+var csmbbo2=0;
+var uss2=0;
+var rcb2=0;
+var esc2=0;
+var asob2=0;
+var omsm2=0;
+var abs2=0;
+var nahd2=0;
+var pse2=0;
+var nbs2=0;
+var trad2=0;
+var usmb2=0;
+
+
+
+
+
+
+
+
+ var mca1;
+var osbba1;
+var  usma1;
+var ob1;
+var  crbdb1;
+var  wob1;
+var  cscdk1;
+var  irbba1;
+var csmbbo1;
+var uss1;
+var rcb1;
+var esc1;
+var asob1;
+var omsm1;
+var abs1;
+var nahd1;
+var pse1;
+var nbs1;
+var trad1;
+var usmb1;
+
+
+
+
+var mca =0;
+var osbba =0;
+var  usma=0;
+var ob =0;
+var  crbdb=0;
+var  wob=0;
+var  cscdk=0;
+var  irbba=0;
+var csmbbo =0;
+var uss =0;
+var rcb =0;
+var esc =0;
+var asob =0;
+var omsm =0;
+var abs =0;
+var nahd =0;
+var pse =0;
+var nbs =0;
+var trad =0;
+var usmb =0;
+var matchs =0;
+var matchsP =0;
+var matchsT =0;
+var matchsPA =0;
+function getAge(dateString) {
+    var dateString = dateString; // Oct 23
+
+    var dateParts = dateString.split("/");
+
+    // month is 0-based, that's why we need dataParts[1] - 1
+    var dateObject = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]); 
+
+    var ageInMilliseconds = Math.abs(new Date() - dateObject);
+
+    return Math.floor(ageInMilliseconds/1000/60/60/24/365); // convert to years
+}
+
+var content = '';
+ const q11 = collection(db, "Joueur");
+ const querySnapshot11 = await getDocs(q11);
+querySnapshot11.forEach(doc => {
+  if (doc.data()["Club"]=="M.C.A" && doc.data()["isSelected"] == true) {
+    ++mca2
+  }
+  if (doc.data()["Club"]=="O.S.B.B.A" && doc.data()["isSelected"] == true) {
+    ++osbba2
+  }  if (doc.data()["Club"]=="U.S.M.A" && doc.data()["isSelected"] == true) {
+    ++usma2
+  }  if (doc.data()["Club"]=="O.B" && doc.data()["isSelected"] == true) {
+    ++ob2
+  }  if (doc.data()["Club"]=="C.R.B.D.B" && doc.data()["isSelected"] == true) {
+    ++crbdb2
+  }  if (doc.data()["Club"]=="W.O.B" && doc.data()["isSelected"] == true) {
+    ++wob2
+  }  if (doc.data()["Club"]=="C.S.C.D.K" && doc.data()["isSelected"] == true) {
+    ++cscdk2
+  }  if (doc.data()["Club"]=="I.R.B.B.A" && doc.data()["isSelected"] == true) {
+    ++irbba2
+  }  if (doc.data()["Club"]=="C.S.M.B.B.O" && doc.data()["isSelected"] == true) {
+    ++csmbbo2
+  }  if (doc.data()["Club"]=="U.S.S" && doc.data()["isSelected"] == true) {
+    ++uss2
+  }  if (doc.data()["Club"]=="R.C.B" && doc.data()["isSelected"] == true) {
+    ++rcb2
+  }  if (doc.data()["Club"]=="E.S.C" && doc.data()["isSelected"] == true) {
+    ++esc2
+  }  if (doc.data()["Club"]=="A.S.O.B" && doc.data()["isSelected"] == true) {
+    ++asob2
+  }  if (doc.data()["Club"]=="O.M.S.M" && doc.data()["isSelected"] == true) {
+    ++omsm2
+  }  if (doc.data()["Club"]=="A.B.S" && doc.data()["isSelected"] == true) {
+    ++abs2
+  }  if (doc.data()["Club"]=="N.A.H.D" && doc.data()["isSelected"] == true) {
+    ++nahd2
+  }  if (doc.data()["Club"]=="P.S.E" && doc.data()["isSelected"] == true) {
+    ++pse2
+  }  if (doc.data()["Club"]=="N.B.S" && doc.data()["isSelected"] == true) {
+    ++nbs2
+  }  if (doc.data()["Club"]=="T.R.A.D" && doc.data()["isSelected"] == true) {
+    ++trad2
+  }  if (doc.data()["Club"]=="U.S.M.B" && doc.data()["isSelected"] == true) {
+    ++usmb2
+  }
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+
+
+
+console.log(mca2);
+
+
+
+
+
+
+
+
+const q9 = collection(db, "Entraineur");
+ const querySnapshot9 = await getDocs(q9);
+ querySnapshot9.forEach(doc => {
+  switch (doc.data()["Club"]) {
+  case "M.C.A":
+    mca1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "O.S.B.B.A":
+    osbba1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "U.S.M.A":
+     usma1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "O.B":
+    ob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "C.R.B.D.B":
+   crbdb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "W.O.B":
+    wob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+  case "C.S.C.D.K":
+    cscdk1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "I.R.B.B.A":
+    irbba1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "C.S.M.B.B.O":
+    csmbbo1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "U.S.S":
+    uss1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "R.C.B":
+    rcb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "E.S.C":
+    esc1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "A.S.O.B":
+    asob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "O.M.S.M":
+    omsm1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "A.B.S":
+    abs1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "N.A.H.D":
+    nahd1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "P.S.E":
+    pse1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "N.B.S":
+    nbs1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "T.R.A.D":
+    trad1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+    case "U.S.M.B":
+    usmb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
+    break;
+}
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+
+
+
+
+
+
+
+ var content = '';
+ const q2 = collection(db, "Joueur");
+ const querySnapshot2 = await getDocs(q2);
+querySnapshot2.forEach(doc => {
+  switch (doc.data()["Club"]) {
+  case "M.C.A":
+    ++mca;
+    break;
+  case "O.S.B.B.A":
+    ++osbba;
+    break;
+  case "U.S.M.A":
+     ++usma;
+    break;
+  case "O.B":
+    ++ob;
+    break;
+  case "C.R.B.D.B":
+   ++crbdb;
+    break;
+  case "W.O.B":
+    ++wob;
+    break;
+  case "C.S.C.D.K":
+    ++cscdk;
+    break;
+    case "I.R.B.B.A":
+    ++irbba;
+    break;
+    case "C.S.M.B.B.O":
+    ++csmbbo;
+    break;
+    case "U.S.S":
+    ++uss;
+    break;
+    case "R.C.B":
+    ++rcb;
+    break;
+    case "E.S.C":
+    ++esc;
+    break;
+    case "A.S.O.B":
+    ++asob;
+    break;
+    case "O.M.S.M":
+    ++omsm;
+    break;
+    case "A.B.S":
+    ++abs;
+    break;
+    case "N.A.H.D":
+    ++nahd;
+    break;
+    case "P.S.E":
+    ++pse;
+    break;
+    case "N.B.S":
+    ++nbs;
+    break;
+    case "T.R.A.D":
+    ++trad;
+    break;
+    case "U.S.M.B":
+    ++usmb;
+    break;
+}
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+
+   const q = collection(db, "Equipe");
+ 
+ const querySnapshot = await getDocs(q);
+
+ //-------------------------table consulter---------------------------//
+ querySnapshot.forEach(doc => {
+   var testRowIndex = clubnames.push([doc.data()["Club"],doc.data()["Date de fondation"],doc.data()["Défaites"],doc.data()["Entraineur"],doc.data()["Nom"],doc.data()["Président"],doc.data()["Victoires"],doc.data()["Ville"]]) -1 ;
+   var row = document.createElement("tr");
+ 
+   var cell1 = document.createElement("td");
+   var cell1Text = document.createTextNode((++cmp));
+   cell1.appendChild(cell1Text);
+
+
+
+
+
+ 
+   var cell2 = document.createElement("td");
+   var cell2Text = document.createTextNode(doc.data()["Club"]);
+   cell2.appendChild(cell2Text);
+ 
+
+
+   switch (doc.data()["Club"]) {
+  case "M.C.A":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(mca1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "O.S.B.B.A":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(osbba1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "U.S.M.A":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(usma1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "O.B":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(ob1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "C.R.B.D.B":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(crbdb1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "W.O.B":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(wob1);
+   cell5.appendChild(cell5Text);
+    break;
+  case "C.S.C.D.K":
+  var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(cscdk1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "I.R.B.B.A":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(irbba1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "C.S.M.B.B.O":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(csmbbo1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "U.S.S":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(uss1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "R.C.B":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(rcb1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "E.S.C":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(esc1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "A.S.O.B":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(asob1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "O.M.S.M":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(omsm1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "A.B.S":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(abs1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "N.A.H.D":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(nahd1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "P.S.E":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(pse1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "N.B.S":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(nbs1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "T.R.A.D":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(trad1);
+   cell5.appendChild(cell5Text);
+    break;
+    case "U.S.M.B":
+    var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(usmb1);
+   cell5.appendChild(cell5Text);
+    break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   switch (doc.data()["Club"]) {
+  case "M.C.A":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(mca);
+   cell6.appendChild(cell6Text);
+    break;
+  case "O.S.B.B.A":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(osbba);
+   cell6.appendChild(cell6Text);
+    break;
+  case "U.S.M.A":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(usma);
+   cell6.appendChild(cell6Text);
+    break;
+  case "O.B":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(ob);
+   cell6.appendChild(cell6Text);
+    break;
+  case "C.R.B.D.B":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(crbdb);
+   cell6.appendChild(cell6Text);
+    break;
+  case "W.O.B":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(wob);
+   cell6.appendChild(cell6Text);
+    break;
+  case "C.S.C.D.K":
+  var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(cscdk);
+   cell6.appendChild(cell6Text);
+    break;
+    case "I.R.B.B.A":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(irbba);
+   cell6.appendChild(cell6Text);
+    break;
+    case "C.S.M.B.B.O":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(csmbbo);
+   cell6.appendChild(cell6Text);
+    break;
+    case "U.S.S":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(uss);
+   cell6.appendChild(cell6Text);
+    break;
+    case "R.C.B":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(rcb);
+   cell6.appendChild(cell6Text);
+    break;
+    case "E.S.C":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(esc);
+   cell6.appendChild(cell6Text);
+    break;
+    case "A.S.O.B":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(asob);
+   cell6.appendChild(cell6Text);
+    break;
+    case "O.M.S.M":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(omsm);
+   cell6.appendChild(cell6Text);
+    break;
+    case "A.B.S":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(abs);
+   cell6.appendChild(cell6Text);
+    break;
+    case "N.A.H.D":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(nahd);
+   cell6.appendChild(cell6Text);
+    break;
+    case "P.S.E":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(pse);
+   cell6.appendChild(cell6Text);
+    break;
+    case "N.B.S":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(nbs);
+   cell6.appendChild(cell6Text);
+    break;
+    case "T.R.A.D":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(trad);
+   cell6.appendChild(cell6Text);
+    break;
+    case "U.S.M.B":
+    var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(usmb);
+   cell6.appendChild(cell6Text);
+    break;
+}
+ 
+
+
+
+
+
+switch (doc.data()["Club"]) {
+  case "M.C.A":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(mca2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "O.S.B.B.A":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(osbba2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "U.S.M.A":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(usma2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "O.B":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(ob2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "C.R.B.D.B":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(crbdb2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "W.O.B":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(wob2);
+   cell15.appendChild(cell15Text);
+    break;
+  case "C.S.C.D.K":
+  var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(cscdk2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "I.R.B.B.A":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(irbba2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "C.S.M.B.B.O":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(csmbbo2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "U.S.S":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(uss2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "R.C.B":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(rcb2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "E.S.C":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(esc2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "A.S.O.B":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(asob2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "O.M.S.M":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(omsm2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "A.B.S":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(abs2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "N.A.H.D":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(nahd2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "P.S.E":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(pse2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "N.B.S":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(nbs2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "T.R.A.D":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(trad2);
+   cell15.appendChild(cell15Text);
+    break;
+    case "U.S.M.B":
+    var cell15 = document.createElement("td");
+   var cell15Text = document.createTextNode(usmb2);
+   cell15.appendChild(cell15Text);
+    break;
+}
+
+
+
+
+
+ 
+ 
+   row.appendChild(cell1);
+   
+   row.appendChild(cell2);
+    row.appendChild(cell6);
+
+   row.appendChild(cell5);
+   row.appendChild(cell15);
+ 
+   tBody.appendChild(row); 
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+//--------------------------table modifier-----------------------------//
+const q3 = collection(db, "Match");
+ const querySnapshot3 = await getDocs(q3);
+ querySnapshot3.forEach(doc => {
+++matchs;
+if (doc.data()["Joué"] == true) {
+  ++matchsT;
+}else{
+  ++matchsP;
+}
+if (new Date()==new Date(doc.data()["Date"])) {
+  ++matchsPA;
+}
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+   var matchss = document.getElementById('matchs');
+   matchss.innerHTML = matchs;
+   var matchst = document.getElementById('matcht');
+   matchst.innerHTML = matchsT;
+   var matchp = document.getElementById('matchp');
+   matchp.innerHTML = matchsP;
+   var matchpa = document.getElementById('matchpa');
+   matchpa.innerHTML = matchsPA;
+
+ //-----------------------------------------------Consulter Classment------------------------------------//
+ 
+//----------------------filling modal--------------//
+  const q4 = collection(db, "Joueur");
+ const querySnapshot4 = await getDocs(q4);
+var one=0,two=0,
+three=0;
+
+ querySnapshot4.forEach(doc => {
+if (18<getAge(doc.data()["Date de naissance"])&& getAge(doc.data()["Date de naissance"])<24) {
+  ++one;
+}
+if (25<getAge(doc.data()["Date de naissance"])&& getAge(doc.data()["Date de naissance"])<33) {
+  ++two;
+}
+if (34<getAge(doc.data()["Date de naissance"])&& getAge(doc.data()["Date de naissance"])<43) {
+  ++three;
+}
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+
+anychart.onDocumentReady(function() {
+
+// set the data
+var data = [
+    {x: "Entre 18 et 24", value: one},
+    {x: "Entre 25 et 33", value: two},
+    {x: "Entre 34 et 43", value: three},
+
+];
+
+// create the chart
+var chart = anychart.pie();
+
+
+
+// set the chart title
+chart.title("L'age des joueurs");
+
+// add the data
+chart.data(data);
+
+// display the chart in the container
+chart.container('container');
+// set legend position
+chart.legend().position("right");
+// set items layout
+chart.legend().itemsLayout("vertical");
+
+
+chart.draw();
+
+});
+
+
+
+
+
+//----------------------Update fuction---------------------//
+const q5 = collection(db, "Equipe");
+ const querySnapshot5 = await getDocs(q5);
+ var nmbr=0;
+ querySnapshot5.forEach(doc => {
+++nmbr;
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+   var utili = document.getElementById('utili');
+   utili.innerHTML = nmbr;
+   const q6 = collection(db, "Joueur");
+ const querySnapshot6 = await getDocs(q6);
+ var nmbr1=0;
+ querySnapshot6.forEach(doc => {
+++nmbr1;
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+   var joueurs = document.getElementById('joueurs');
+   joueurs.innerHTML = nmbr1;
+
+   const q7 = collection(db, "Actualités");
+ const querySnapshot7 = await getDocs(q7);
+ var nmbr2=0;
+ querySnapshot7.forEach(doc => {
+++nmbr2;
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
+   var actu = document.getElementById('actu');
+   actu.innerHTML = nmbr2;
+
+
+//-------------------delete function---------------------//
+
+
+/*-----------------------------------------------*/
+
+
+//-------------------Add function----------------//
+
+
+
+
+
+
+
+</script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.5"></script>
+</body>
+
+</html>
