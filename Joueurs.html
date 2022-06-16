@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo3.png">
-    <title>Gestion F.A.B.B</title>
+    <title>Gestion F.A.B.B - Joueurs</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -43,6 +43,10 @@
           opacity: 0;
           z-index: -1;
       }
+      .labs{
+        display: inline-block;
+        width: 100%;
+      }
           </style>
 
   </head>
@@ -67,9 +71,12 @@
                         <li class="has-sub">
                             <a href="javascript:void(0)">Menu</a>
                             <ul class="sub-menu">
-                                <li><a href="Equipes.html">Équipes</a></li>
-                                <li><a href="Matchs.html">Matchs</a></li>
-                                <li><a href="News.html">Actualités</a></li>
+                              <li><a href="imgVid.html">Médias</a></li>
+                              <li><a href="Matchs.html">Matchs</a></li>
+                              <li><a href="News.html">Actualités</a></li>
+                              <li><a href="Equipes.html">Équipe</a></li>
+                              <li><a href="entraineur.html">Entraîneurs</a></li>
+                              <li><a href="equipeNat.html">Sélection nationale</a></li>
                             </ul>
                         </li>
                         <li><a style="visibility: hidden;" href="contact-us.html">Contacts</a></li> 
@@ -124,10 +131,7 @@
                              <div> <select id="searchbox">
                                <option value="Nom">Nom</option>
                                <option value="Prenom">Prénom</option>
-                               <option value="Age">Age</option>
                                <option value="Club">Club</option>
-                               <option value="Numero">Numéro</option>
-                               <option value="Poste">Poste</option>
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="search">
@@ -145,7 +149,7 @@
                                 <th>Nom</th>
                                 <th>Prénom</th>
                                 <th>Date de naissance</th>
-                                <th>Age</th>
+                                <th>Âge</th>
                                 <th>Groupe sanguin</th>
                                 <th>Club</th>
                                 <th>Séléction nationale</th>
@@ -171,10 +175,8 @@
                              <div> <select id="searchboxx">
                               <option value="Nom">Nom</option>
                               <option value="Prenom">Prénom</option>
-                              <option value="Age">Age</option>
                               <option value="Club">Club</option>
-                              <option value="Numero">Numéro</option>
-                              <option value="Poste">Poste</option>
+             
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="searchx">
@@ -192,7 +194,7 @@
                                   <th>Nom</th>
                                   <th>Prénom</th>
                                   <th>Date de naissance</th>
-                                  <th>Age</th>
+                                  <th>Âge</th>
                                   <th>Groupe sanguin</th>
                                   <th>Club</th>
                                   <th>Séléction nationale</th>
@@ -214,33 +216,33 @@
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="idj" style="color: black;" >ID :</label>
+                                      <label for="idj" style="color: black;" >ID</label>
                                       <input type="number"  id="idj" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="nomj" style="color: black;">Nom :</label>
+                                      <label for="nomj" style="color: black;">Nom</label>
                                       <input type="text"  id="nomj">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="prenomj" style="color: black;" >Prénom :</label>
+                                      <label for="prenomj" style="color: black;" >Prénom</label>
                                       <input type="text"  id="prenomj">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="datej" style="color: black;" >Date de naissance :</label>
+                                      <label for="datej" style="color: black;" >Date de naissance</label>
                                       <input type="number"  id="datej" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                   <fieldset>
-                                    <label for="clubj" style="color: black;" >Club :</label>
+                                    <label for="clubj" style="color: black;" >Club</label>
                                     <select  class="form-select" aria-label="Default select example" id="clubj" >
-                                      <option selected disabled>Choisi</option>
+                                      <option selected disabled>Choisir</option>
                                     
                                       
                 
@@ -249,9 +251,9 @@
                                 </div>
                                   <div class="col-lg-8">
                                     <fieldset>
-                                      <label for="gsj" style="color: black;" >Groupe sanguin :</label>
+                                      <label for="gsj" style="color: black;" >Groupe sanguin</label>
                                       <select  class="form-select" aria-label="Default select example" id="gsj" >
-                                        <option selected disabled>Choisi</option>
+                                        <option selected disabled>Choisir</option>
                                         <option value="A+">A+</option>
                                         <option value="A-">A-</option>
                                         <option value="B+">B+</option>
@@ -316,8 +318,27 @@
    <label class="labs">Nom :</label>                 <input id="nombox" type="text" class="labs"></input> <br><br>     
    <label class="labs"> Prénom :</label>  <input id="prenombox" type="text" class="labs"></input> <br><br>
    <label class="labs">Date de naissance :</label>          <input id="datebox" type="text" class="labs"></input> <br><br>
-   <label class="labs"> Club :</label>         <input id="clubbox" type="text" class="labs"></input> <br><br>
-     <label class="labs">Groupe sanguin :</label>              <input id="gsbox" type="text" class="labs"></input> <br><br>
+   <label class="labs"> Club :</label>         <select  class="form-select" aria-label="Default select example" id="clubbox" >
+    <option selected disabled>Choisir</option>
+  
+    
+
+</select> <br><br>
+     <label class="labs">Groupe sanguin :</label>             <select  class="form-select" aria-label="Default select example" id="gsbox" >
+      <option selected disabled>Choisir</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+    
+    
+      
+
+  </select> <br><br>
 
        </div>
         <div class="modal-footer">
@@ -469,7 +490,12 @@ select.forEach(
     var el = document.createElement("option");
         el.textContent =doc.data()["Club"] ;
        el.value = doc.data()["Club"];
-       clubj.appendChild(el); 
+       clubj.appendChild(el);
+       
+       var el1 = document.createElement("option");
+        el1.textContent =doc.data()["Club"] ;
+       el1.value = doc.data()["Club"];
+       club.appendChild(el1);
 
   }, error => {
       console.log(error.message);
@@ -501,13 +527,13 @@ select.forEach(
     return age ;
       
 }  
- function getAge(dateString) {
+function getAge(dateString) {
     var dateString = dateString; // Oct 23
 
     var dateParts = dateString.split("/");
 
     // month is 0-based, that's why we need dataParts[1] - 1
-    var dateObject = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]); 
+    var dateObject = new Date(+dateParts[2], dateParts[1], +dateParts[0]); 
 
     var ageInMilliseconds = Math.abs(new Date() - dateObject);
 
@@ -681,11 +707,11 @@ const washingtonRef = doc(db, "Joueur", i);
 
 
 await updateDoc(washingtonRef, {
-           "Age" : parseInt(age.value),
+           "ID" :idd.value,
            "Club": club.value,
            "Nom": nom.value,
-           "Numero":parseInt(num.value) ,
-           "Poste": poste.value,
+           "GS":gs.value,
+           "Date de naissance": date.value,
            "Prenom":prenom.value,
 }).then(()=>{
              alert("Mise à jour effectuée avec succès");
@@ -718,13 +744,16 @@ await  deleteDoc(ref).then(()=>{
 }
 //-------------------Add function----------------//
 async function Add() {
+  var dateParts = datej.value.split("-");
+
+var datee = dateParts[2]+"/"+ dateParts[1]+"/"+dateParts[0]; 
    var ref = collection(db, "Joueur");
    if (clubj.value == "Choisi" ||nomj.value==""||prenomj.value=="" ) {
      alert("Nom, prénom et club du joueur sont obligatoires !")
    }else{ 
      const docRef = await addDoc(
        ref,{
-           "Date de naissane" : datej.value,
+           "Date de naissance" : datee,
            "Club": clubj.value,
            "Nom": nomj.value,
            "GS": gsj.value ,
@@ -734,7 +763,7 @@ async function Add() {
        }
    ).then(()=>{
        alert(`${nomj.value} ${prenomj.value} a été ajouté avec succès !`);
-       idjj.value = "";
+       idj.value = "";
        nomj.value = "";
        datej.value = "";
        prenomj.value="";
@@ -766,7 +795,7 @@ search.addEventListener("keyup", function (event) {
     : (row.style.display = "none");
     }
     if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
+          row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
@@ -802,7 +831,7 @@ searchx.addEventListener("keyup", function (event) {
     : (row.style.display = "none");
     }
     if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
+          row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }

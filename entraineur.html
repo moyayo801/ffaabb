@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo3.png">
-    <title>Gestion F.A.B.B</title>
+    <title>Gestion F.A.B.B - Entraîneurs</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -43,6 +43,10 @@
           opacity: 0;
           z-index: -1;
       }
+      .labs{
+        display: inline-block;
+        width: 100%;
+      }
           </style>
 
   </head>
@@ -67,9 +71,12 @@
                         <li class="has-sub">
                             <a href="javascript:void(0)">Menu</a>
                             <ul class="sub-menu">
-                                <li><a href="Equipes.html">Équipes</a></li>
-                                <li><a href="Matchs.html">Matchs</a></li>
-                                <li><a href="News.html">Actualités</a></li>
+                              <li><a href="Joueurs.html">Joueurs</a></li>
+                              <li><a href="Matchs.html">Matchs</a></li>
+                              <li><a href="News.html">Actualités</a></li>
+                              <li><a href="Equipes.html">Équipe</a></li>
+                              <li><a href="imgVid.html">Médias</a></li>
+                              <li><a href="equipeNat.html">Sélection nationale</a></li>
                             </ul>
                         </li>
                         <li><a style="visibility: hidden;" href="contact-us.html">Contacts</a></li> 
@@ -99,7 +106,7 @@
         <div class="col-12 offset-lg-3">
           <div class="section-heading">
             <h6>Super-Division Nationale 1</h6>
-            <h4>Entraîneur</h4>
+            <h4>Entraîneurs</h4>
           </div>
         </div>
         <div class="col-12">
@@ -108,7 +115,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="menu">
-                    <div class="active gradient-border"><span>Liste des Entraîneur</span></div>
+                    <div class="active gradient-border"><span>Liste des entraîneurs</span></div>
                     <div class="gradient-border"><span>Modifier</span></div>
                     <div class="gradient-border"><span>Ajouter</span></div>
                   </div>
@@ -124,6 +131,8 @@
                              <div> <select id="searchbox">
                                <option value="Nom">Nom</option>
                                <option value="Prenom">Prénom</option>
+                               <option value="Club">Club</option>
+                               <option value="Fonction">Fonction</option>
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="search">
@@ -142,7 +151,7 @@
                                 <th>Prénom</th>
                                 <th>Date de naissance</th>
                                 <th>Lieu de naissance</th>
-                                <th>Age</th>
+                                <th>Âge</th>
                                 <th>Club</th>
                                 <th>Fonction</th>
                             
@@ -167,7 +176,8 @@
                              <div> <select id="searchboxx">
                               <option value="Nom">Nom</option>
                               <option value="Prenom">Prénom</option>
-
+                              <option value="Club">Club</option>
+                              <option value="Fonction">Fonction</option>
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="searchx">
@@ -186,7 +196,7 @@
                                     <th>Prénom</th>
                                     <th>Date de naissance</th>
                                     <th>Lieu de naissance</th>
-                                    <th>Age</th>
+                                    <th>Âge</th>
                                     <th>Club</th>
                                     <th>Fonction</th>
                                 
@@ -207,39 +217,39 @@
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="idj" style="color: black;" >ID :</label>
+                                      <label for="idj" style="color: black;" >ID</label>
                                       <input type="text"  id="idj" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="nomj" style="color: black;">Nom :</label>
+                                      <label for="nomj" style="color: black;">Nom</label>
                                       <input type="text"  id="nomj">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="prenomj" style="color: black;" >Prénom :</label>
+                                      <label for="prenomj" style="color: black;" >Prénom</label>
                                       <input type="text"  id="prenomj">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="datej" style="color: black;" >Date de naissance :</label>
+                                      <label for="datej" style="color: black;" >Date de naissance</label>
                                       <input type="number"  id="datej" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="lieuj" style="color: black;" >Lieu de naissance :</label>
+                                      <label for="lieuj" style="color: black;" >Lieu de naissance</label>
                                       <input type="text"  id="lieuj" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                   <fieldset>
-                                    <label for="clubj" style="color: black;" >Club :</label>
+                                    <label for="clubj" style="color: black;" >Club</label>
                                     <select  class="form-select" aria-label="Default select example" id="clubj" >
-                                      <option selected disabled>Choisi</option>
+                                      <option selected disabled>Choisir</option>
                                     
                                       
                 
@@ -248,9 +258,9 @@
                                 </div>
                                   <div class="col-lg-8">
                                     <fieldset>
-                                      <label for="foncj" style="color: black;" >Fonction :</label>
+                                      <label for="foncj" style="color: black;" >Fonction</label>
                                       <select  class="form-select" aria-label="Default select example" id="foncj" >
-                                        <option selected disabled>Choisi</option>
+                                        <option selected disabled>Choisir</option>
                                         <option value="HC">Coach en chef</option>
                                         <option value="AC">Adjoit-coach</option>
                                    
@@ -314,7 +324,7 @@
    
    <label class="labs"> Club :</label>         <input id="clubbox" type="text" class="labs"></input> <br><br>
      <label class="labs">Fonction :</label>               <select  class="form-select" aria-label="Default select example" id="gsbox" >
-    <option selected disabled>Choisi</option>
+    <option selected disabled>Choisir</option>
     <option value="HC">Coach en chef</option>
     <option value="AC">Adjoit-coach</option>
 
@@ -509,8 +519,7 @@ select.forEach(
     return age ;
       
 }  
- function getAge(dateString) {
-    var dateString = dateString; // Oct 23
+ function getAge(dateString) { // Oct 23
 
     var dateParts = dateString.split("/");
 
@@ -756,59 +765,40 @@ search.addEventListener("keyup", function (event) {
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Age") {
-          row.querySelectorAll("td")[3].textContent.toLowerCase().startsWith(q)
+    if (searchbox.value == "Fonction") {
+          row.querySelectorAll("td")[7].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
     if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Numero") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Poste") {
           row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
+
 
   })
 })
 searchx.addEventListener("keyup", function (event) {
   const q = event.target.value.toLowerCase();
   rows.forEach((row) => {
-    if (searchbox.value == "Nom") {
+    if (searchboxx.value == "Nom") {
           row.querySelectorAll("td")[1].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Prenom") {
+    if (searchboxx.value == "Prenom") {
           row.querySelectorAll("td")[2].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Age") {
-          row.querySelectorAll("td")[3].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Numero") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Poste") {
+    if (searchboxx.value == "Club") {
           row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
+    ?(row.style.display = "")
+    : (row.style.display = "none");
+    }
+    if (searchboxx.value == "Fonction") {
+          row.querySelectorAll("td")[7].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }

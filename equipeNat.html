@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo3.png">
-    <title>Gestion F.A.B.B</title>
+    <title>Gestion F.A.B.B - Séléction nationale</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -43,6 +43,10 @@
           opacity: 0;
           z-index: -1;
       }
+      .labs{
+        display: inline-block;
+        width: 100%;
+      }
           </style>
 
   </head>
@@ -67,9 +71,12 @@
                         <li class="has-sub">
                             <a href="javascript:void(0)">Menu</a>
                             <ul class="sub-menu">
-                                <li><a href="Equipes.html">Équipe</a></li>
-                                <li><a href="Matchs.html">Matchs</a></li>
-                                <li><a href="News.html">Actualités</a></li>
+                              <li><a href="Joueurs.html">Joueurs</a></li>
+                                  <li><a href="Matchs.html">Matchs</a></li>
+                                  <li><a href="News.html">Actualités</a></li>
+                                  <li><a href="Equipes.html">Équipe</a></li>
+                                  <li><a href="entraineur.html">Entraîneurs</a></li>
+                                  <li><a href="imgVid.html">Médias</a></li>
                             </ul>
                         </li>
                         <li><a style="visibility: hidden;" href="contact-us.html">Contacts</a></li> 
@@ -125,7 +132,6 @@
                                <option value="Nom">Nom</option>
                                <option value="Prenom">Prénom</option>
                                <option value="Club">Club</option>
-                               <option value="Poste">Poste</option>
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="search">
@@ -166,10 +172,8 @@
                              <div> <select id="searchboxx">
                               <option value="Nom">Nom</option>
                               <option value="Prenom">Prénom</option>
-                              <option value="Age">Age</option>
                               <option value="Club">Club</option>
-                              <option value="Numero">Numéro</option>
-                              <option value="Poste">Poste</option>
+                              
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="searchx">
@@ -207,7 +211,7 @@
                              
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="idIMG" style="color: black;">ID :</label>
+                                      <label for="idIMG" style="color: black;">ID</label>
                                       <input type="text"  id="idIMG">
                                     </fieldset>
                                   </div>
@@ -235,7 +239,7 @@
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="imagesbox" style="color: black;">Titre de l'image :</label>
+                                      <label for="imagesbox" style="color: black;">Titre de l'image</label>
                                       <input type="text" id="namebox1">
                                     </fieldset>
                                   </div>
@@ -287,10 +291,9 @@
          
    <label class="labs">Nom :</label>                 <input id="nombox" type="text" class="labs" disabled></input> <br><br>     
    <label class="labs"> Prénom :</label>  <input id="prenombox" type="text" class="labs"disabled></input> <br><br>
-   <label class="labs"> Age :</label>          <input id="agebox" type="number" class="labs"disabled></input> <br><br>
+
    <label class="labs"> Club :</label>         <input id="clubbox" type="text" class="labs"disabled></input> <br><br>
-     <label class="labs">Numéro :</label>              <input id="numbox" type="number" class="labs"disabled></input> <br><br>
-     <label class="labs">Poste :</label>        <input id="postebox" type="text" class="labs"disabled></input> <br><br>
+
      <label class="labs">Séléction nationale</label>        <input id="enbox" value="true" type="checkbox" class="labs"></input> <br><br>
        </div>
         <div class="modal-footer">
@@ -496,7 +499,7 @@ cell8.appendChild(cell8Text);
        );
 //--------------------------table modifier-----------------------------//
 querySnapshot.forEach(doc => {
- var testRowIndex = clubnames.push([doc.data()["Nom"],doc.data()["Prenom"],doc.data()["Age"],doc.data()["Club"],doc.data()["Numero"],doc.data()["Poste"],doc.data()["isSelected"]]) -1 ;
+ var testRowIndex = clubnames.push([doc.data()["Nom"],doc.data()["Prenom"],doc.data()["Club"],doc.data()["isSelected"]]) -1 ;
  var row = document.createElement("tr");
 
  var cell1 = document.createElement("td");
@@ -572,11 +575,10 @@ function Gett(index,id) {
 // doc.data() is never undefined for query doc snapshots
 nom.value = clubnames[index][0];
 prenom.value = clubnames[index][1];
-age.value =clubnames[index][2];
-club.value =clubnames[index][3];
-num.value = clubnames[index][4];
-poste.value = clubnames[index][5];
-if (clubnames[index][6]== true ) {
+
+club.value =clubnames[index][2];
+
+if (clubnames[index][3]== true ) {
     en.setAttribute("checked", "checked");
 }else{
   en.removeAttribute("checked");
@@ -598,12 +600,7 @@ if (en.checked == true) {
 }
 
 await updateDoc(washingtonRef, {
-           "Age" : parseInt(age.value),
-           "Club": club.value,
-           "Nom": nom.value,
-           "Numero":parseInt(num.value) ,
-           "Poste": poste.value,
-           "Prenom":prenom.value,
+  
            "isSelected": eqn
 }).then(()=>{
              alert("mise à jour effectuée");
@@ -651,23 +648,8 @@ search.addEventListener("keyup", function (event) {
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Age") {
-          row.querySelectorAll("td")[3].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
     if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Numero") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Poste") {
-          row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
+          row.querySelectorAll("td")[3].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
@@ -677,36 +659,22 @@ search.addEventListener("keyup", function (event) {
 searchx.addEventListener("keyup", function (event) {
   const q = event.target.value.toLowerCase();
   rows.forEach((row) => {
-    if (searchbox.value == "Nom") {
+    if (searchboxx.value == "Nom") {
           row.querySelectorAll("td")[1].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Prenom") {
+    if (searchboxx.value == "Prenom") {
           row.querySelectorAll("td")[2].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Age") {
+    if (searchboxx.value == "Club") {
           row.querySelectorAll("td")[3].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Club") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Numero") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
-    if (searchbox.value == "Poste") {
-          row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
+
 
 
   })

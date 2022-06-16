@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/images/logo3.png">
-    <title>Gestion F.A.B.B</title>
+    <title>Gestion F.A.B.B - Équipes</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -43,6 +43,10 @@ i{
     opacity: 0;
     z-index: -1;
 }
+.labs{
+        display: inline-block;
+        width: 100%;
+      }
     </style>
 
   </head>
@@ -67,9 +71,12 @@ i{
                           <li class="has-sub">
                               <a href="javascript:void(0)">Menu</a>
                               <ul class="sub-menu">
-                                  <li><a href="Joueurs.html">Joueurs</a></li>
+                                <li><a href="Joueurs.html">Joueurs</a></li>
                                   <li><a href="Matchs.html">Matchs</a></li>
                                   <li><a href="News.html">Actualités</a></li>
+                                  <li><a href="imgVid.html">Médias</a></li>
+                                  <li><a href="entraineur.html">Entraîneurs</a></li>
+                                  <li><a href="equipeNat.html">Sélection nationale</a></li>
                               </ul>
                           </li>
                           <li><a style="visibility: hidden;" href="contact-us.html">Contacts</a></li> 
@@ -131,10 +138,8 @@ i{
                             <div class="boxx">
                              <div> <select id="searchbox">
                                <option value="Club">Club</option>
-                               <option value="Entraineur">Entraîneur</option>
-                               <option value="President">Président</option>
                                <option value="nom">Nom</option>
-                               <option value="Ville">Ville</option>
+                               <option value="President">Président</option>
                              </select></div>
                                <form name="search">
                                    <input type="text" class="input-search" id="search">
@@ -152,10 +157,11 @@ i{
                                 <th>#</th>
                                 <th>Abr.</th> 
                                 <th>Nom complet de l'équipe</th>
-                                <th>Date de fondation</th>
-                                <th>Entraîneur</th>
-                               
+                                <th>E-mail</th>
+                                <th>Coach en chef</th>
+                                <th>Adjoint-Coach</th>
                                 <th>Président</th>
+                                <th>Lieu</th>
 
                           
                             
@@ -180,13 +186,12 @@ i{
                             <div class="boxx">
                              <div> <select id="searchboxx">
                                <option value="Club">Club</option>
-                               <option value="Entraineur">Entraîneur</option>
-                               <option value="President">Président</option>
-                               <option value="nom">Nom</option>
-                               <option value="Ville">Ville</option>
+                              <option value="nom">Nom</option>
+                               
+                           
                              </select></div>
                                <form name="search">
-                                   <input type="text" class="input-search" id="searchxx">
+                                   <input type="text" class="input-search" id="searchx">
                                </form>
                                    <i class="fas fa-search"></i>
                            </div>
@@ -227,15 +232,15 @@ i{
                           <div class="col-lg-4">
                         
                             <div class="boxx">
-                             <div> <select id="searchboxx">
+                             <div> <select id="searchboxxx">
                                <option value="Club">Club</option>
-                               <option value="Entraineur">Entraîneur</option>
+                                <option value="nom">Nom</option>
                                <option value="President">Président</option>
-                               <option value="nom">Nom</option>
-                               <option value="Ville">Ville</option>
+                              
+                          
                              </select></div>
-                               <form name="search">
-                                   <input type="text" class="input-search" id="searchx">
+                               <form name="searchxx">
+                                   <input type="text" class="input-search" id="searchxx">
                                </form>
                                    <i class="fas fa-search"></i>
                            </div>
@@ -249,12 +254,13 @@ i{
                               <th>#</th>
                               <th>Abr.</th> 
                               <th>Nom complet de l'équipe</th>
-                              <th>Date de Fondation</th>
+                              <th>E-mail</th>
 
-                              <th>Entraîneur</th>
+                              <th>Coach en chef</th>
+                              <th>Adjoint-Coach</th>
                               
                               <th>Président</th>
-
+                              <th>Lieu</th>
                         
                           
                           </thead>
@@ -274,37 +280,31 @@ i{
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="clubbox" style="color: black;">Club :</label>
+                                      <label for="clubbox" style="color: black;">Club</label>
                                       <input type="text"  id="club">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="nombox" style="color: black;" >Équipe :</label>
+                                      <label for="nombox" style="color: black;" >Nom complet de l'équipe</label>
                                       <input type="text"  id="nom">
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="presidentbox" style="color: black;" >Président :</label>
+                                      <label for="presidentbox" style="color: black;" >Président</label>
                                       <input type="text"  id="president" >
-                                    </fieldset>
-                                  </div>
-                                  <div class="col-lg-4">
-                                    <fieldset>
-                                      <label for="entraineurbox" style="color: black;" >Entraineur :</label>
-                                      <input type="text"  id="entraineur" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-8">
                                     <fieldset>
-                                      <label for="fondbox" style="color: black;" >Date de fondation :</label>
+                                      <label for="fondbox" style="color: black;" >E-mail</label>
                                       <input type="text" id="fond" >
                                     </fieldset>
                                   </div>
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="villebox" style="color: black;" >Salle :</label>
+                                      <label for="villebox" style="color: black;" >Lieu</label>
                                       <input type="text" id="ville" >
                                     </fieldset>
                                   </div>
@@ -325,7 +325,7 @@ i{
 
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="imagesbox" style="color: black;">Titre de l'image :</label>
+                                      <label for="imagesbox" style="color: black;">Titre de l'image</label>
                                       <input type="text" id="namebox">
                                     </fieldset>
                                   </div>
@@ -354,8 +354,10 @@ i{
                              
                                   <div class="col-lg-4">
                                     <fieldset>
-                                      <label for="idIMG" style="color: black;">ID :</label>
-                                      <input type="text"  id="idIMG">
+                                      <label for="domicilem" style="color: black;">ID</label>
+                                      <select  class="form-select" aria-label="Default select example" id="domicilem" >
+                                        <option selected value="Choisi">Choisir</option>
+                                    </select>
                                     </fieldset>
                                   </div>
                           
@@ -382,7 +384,7 @@ i{
                                   </div>
                                   <div class="col-lg-6">
                                     <fieldset>
-                                      <label for="imagesbox" style="color: black;">Titre de l'image :</label>
+                                      <label for="imagesbox" style="color: black;">Description</label>
                                       <input type="text" id="namebox1">
                                     </fieldset>
                                   </div>
@@ -432,12 +434,10 @@ i{
         <div class="modal-body">
          
    <label class="labs">Club :</label>                 <input id="clubbox" type="text" class="labs"></input> <br><br>     
-   <label class="labs"> Date de fondation :</label>  <input id="fondbox" type="text" class="labs"></input> <br><br>
-
-   <label class="labs">Entraîneur :</label>         <input id="entraineurbox" type="text" class="labs"></input> <br><br>
-     <label class="labs">Équipe :</label>              <input id="nombox" type="text" class="labs"></input> <br><br>
+   <label class="labs">E-mail :</label>  <input id="fondbox" type="text" class="labs"></input> <br><br>
+   <label class="labs">Équipe :</label>              <input id="nombox" type="text" class="labs"></input> <br><br>
      <label class="labs">Président :</label>        <input id="presidentbox" type="text" class="labs"></input> <br><br>
-     <label class="labs">Salle :</label>            <input id="villebox" type="text" class="labs"></input> <br><br> 
+     <label class="labs">Lieu :</label>            <input id="villebox" type="text" class="labs"></input> <br><br> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -600,9 +600,11 @@ i{
  var savecl = document.getElementById('savecl');
  var drop = document.getElementById('drop');
  var searchbox = document.getElementById('searchbox');
+ var domicilem = document.getElementById('domicilem');
  const search = document.getElementById('search');
  var searchboxx = document.getElementById('searchboxx');
  const searchx = document.getElementById('searchx');
+ const searchxx = document.getElementById('searchxx');
  var cle = document.getElementById('index');
  var cle2 = document.getElementById('indexx');
  var clubnames = [];
@@ -634,6 +636,8 @@ var pse1;
 var nbs1;
 var trad1;
 var usmb1;
+let ents =[];
+let cllubs =[];
  flatpickr("#horairebox", {
   enableTime: true,
 
@@ -642,83 +646,88 @@ flatpickr("#fondbox", {
   
 
 });
-flatpickr("#fond", {
-  
 
-});
+function dateFormat(inputDate, format) {
+      //parse the input date
+      const date = new Date(inputDate);
+
+      //extract the parts of the date
+      const day = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      //replace the month
+      format = format.replace("MM", month.toString().padStart(2, "0"));
+
+      //replace the year
+      if (format.indexOf("yyyy") > -1) {
+        format = format.replace("yyyy", year.toString());
+      } else if (format.indexOf("yy") > -1) {
+        format = format.replace("yy", year.toString().substr(2, 2));
+      }
+
+      //replace the day
+      format = format.replace("dd", day.toString().padStart(2, "0"));
+
+      return format;
+    }
+    
  //--------------------filling table-----------------------//
+ const select = await getDocs(collection(db, "Equipe"));
+
+select.forEach(
+  doc =>{
+    var el = document.createElement("option");
+        el.textContent =doc.data()["Club"] ;
+       el.value = doc.data()["Club"];
+       domicilem.appendChild(el); 
+
+
+  }, error => {
+      console.log(error.message);
+    }
+)
  const q9 = collection(db, "Entraineur");
  const querySnapshot9 = await getDocs(q9);
  querySnapshot9.forEach(doc => {
-  switch (doc.data()["Club"]) {
-  case "M.C.A":
-    mca1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "O.S.B.B.A":
-    osbba1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "U.S.M.A":
-     usma1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "O.B":
-    ob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "C.R.B.D.B":
-   crbdb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "W.O.B":
-    wob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-  case "C.S.C.D.K":
-    cscdk1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "I.R.B.B.A":
-    irbba1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "C.S.M.B.B.O":
-    csmbbo1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "U.S.S":
-    uss1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "R.C.B":
-    rcb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "E.S.C":
-    esc1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "A.S.O.B":
-    asob1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "O.M.S.M":
-    omsm1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "A.B.S":
-    abs1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "N.A.H.D":
-    nahd1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "P.S.E":
-    pse1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "N.B.S":
-    nbs1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "T.R.A.D":
-    trad1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
-    case "U.S.M.B":
-    usmb1=`${doc.data()["Nom"]} ${doc.data()["Prenom"]}`;
-    break;
+  let ent ={
+ "Club": `${doc.data()["Club"]}`,
+ "DN": `${doc.data()["DN"]}`,
+ "Fonction": `${doc.data()["Fonction"]}`,
+ "ID": `${doc.data()["ID"]}`,
+ "LN":`${doc.data()["LN"]}`,
+ "Nom":`${doc.data()["Nom"]}`,
+ "Prenom":`${doc.data()["Prenom"]}`,
 }
+ents.push(ent);
    
    }, error => {
      console.log(error.message);
    }
    );
 
-
+   const y = collection(db, "Equipe");
+ const yy = await getDocs(y);
+ yy.forEach(doc => {
+  let club ={
+ "Club": `${doc.data()["Club"]}`,
+ "Nom": `${doc.data()["Nom"]}`,
+ "Président": `${doc.data()["Président"]}`,
+ "Défaites":`${doc.data()["Défaites"]}`,
+ "PA":`${doc.data()["PA"]}`,
+ "PC":`${doc.data()["PC"]}`,
+ "PP":`${doc.data()["PP"]}`,
+ "Victoires":`${doc.data()["Victoires"]}`,
+ "Salle":`${doc.data()["Salle"]}`,
+ "id":`${doc.id}`,
+ "email":`${doc.data()["Email"]}`
+}
+cllubs.push(club);
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
 
 
 
@@ -729,143 +738,54 @@ flatpickr("#fond", {
  const querySnapshot = await getDocs(q2);
  var content = '';
  //-------------------------table consulter---------------------------//
- querySnapshot.forEach(doc => {
-   var testRowIndex = clubnames.push([doc.data()["Club"],doc.data()["Date de fondation"],doc.data()["Défaites"],doc.data()["Entraineur"],doc.data()["Nom"],doc.data()["Président"],doc.data()["Victoires"],doc.data()["Ville"]]) -1 ;
-   var row = document.createElement("tr");
- 
+ cllubs.forEach((doc,index) => {
+   var testRowIndex = clubnames.push([doc.Club,doc.email,doc.Défaites,doc.Nom,doc.Président,doc.Victoires,doc.Salle]) -1 ;
+    var row = document.createElement("tr");
+  
+   let clubac = ents.filter(ent => ent.Club === doc.Club && ent.Fonction === "AC");
+   let clubhc = ents.filter(ent => ent.Club === doc.Club && ent.Fonction === "HC");
+   
+
    var cell1 = document.createElement("td");
    var cell1Text = document.createTextNode((++cmp));
    cell1.appendChild(cell1Text);
  
    var cell2 = document.createElement("td");
-   var cell2Text = document.createTextNode(doc.data()["Club"]);
+   var cell2Text = document.createTextNode(doc.Club);
    cell2.appendChild(cell2Text);
  
    var cell3 = document.createElement("td");
-   var cell3Text = document.createTextNode(doc.data()["Date de fondation"]);
+   var cell3Text = document.createTextNode(doc.email);
    cell3.appendChild(cell3Text);
  
- 
-   switch (doc.data()["Club"]) {
-  case "M.C.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(mca1);
+   var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(`${clubac[0].Nom} ${clubac[0].Prenom}`);
    cell5.appendChild(cell5Text);
-    break;
-  case "O.S.B.B.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(osbba1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "U.S.M.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(usma1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "O.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(ob1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "C.R.B.D.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(crbdb1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "W.O.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(wob1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "C.S.C.D.K":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(cscdk1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "I.R.B.B.A":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(irbba1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "C.S.M.B.B.O":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(csmbbo1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "U.S.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(uss1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "R.C.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(rcb1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "E.S.C":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(esc1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "A.S.O.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(asob1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "O.M.S.M":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(omsm1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "A.B.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(abs1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "N.A.H.D":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(nahd1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "P.S.E":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(pse1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "N.B.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(nbs1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "T.R.A.D":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(trad1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "U.S.M.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(usmb1);
-   cell5.appendChild(cell5Text);
-    break;
-}
+   var cell05 = document.createElement("td");
+   var cell05Text = document.createTextNode(`${clubhc[0].Nom} ${clubhc[0].Prenom}`);
+   cell05.appendChild(cell05Text);
+  
    var cell6 = document.createElement("td");
-   var cell6Text = document.createTextNode(doc.data()["Nom"]);
+   var cell6Text = document.createTextNode(doc.Nom);
    cell6.appendChild(cell6Text);
  
    var cell7 = document.createElement("td");
-   var cell7Text = document.createTextNode(doc.data()["Président"]);
+   var cell7Text = document.createTextNode(doc.Président);
    cell7.appendChild(cell7Text);
- 
+   var cell07 = document.createElement("td");
+   var cell07Text = document.createTextNode(doc.Salle);
+   cell07.appendChild(cell07Text);
  
    row.appendChild(cell1);
    
    row.appendChild(cell2);
-    row.appendChild(cell6);
+   row.appendChild(cell6);
    row.appendChild(cell3);
+   row.appendChild(cell05);
    row.appendChild(cell5);
   
    row.appendChild(cell7);
-
+   row.appendChild(cell07);
    
 
  
@@ -876,148 +796,59 @@ flatpickr("#fond", {
    }
    );
 //--------------------------table modifier-----------------------------//
- querySnapshot.forEach(doc => {
- var testRowIndex = clubnames.push([doc.data()["Club"],doc.data()["Date de fondation"],doc.data()["Défaites"],doc.data()["Entraineur"],doc.data()["Nom"],doc.data()["Président"],doc.data()["Victoires"],doc.data()["Ville"]]) -1 ;
- var row = document.createElement("tr");
+cllubs.forEach((doc,index) => {
+   console.log(index);
+   var testRowIndex = clubnames.push([doc.Club,doc.email,doc.Défaites,doc.Nom,doc.Président,doc.Victoires,doc.Salle]) -1 ;
+   console.log(doc.Salle);
+   var row = document.createElement("tr");
+  
+   let clubac = ents.filter(ent => ent.Club === doc.Club && ent.Fonction === "AC");
+   let clubhc = ents.filter(ent => ent.Club === doc.Club && ent.Fonction === "HC");
+   
 
- var cell1 = document.createElement("td");
- var cell1Text = document.createTextNode((++cmp1));
- cell1.appendChild(cell1Text);
-
- var cell2 = document.createElement("td");
- var cell2Text = document.createTextNode(doc.data()["Club"]);
- cell2.appendChild(cell2Text);
-
- var cell3 = document.createElement("td");
- var cell3Text = document.createTextNode(doc.data()["Date de fondation"]);
- cell3.appendChild(cell3Text);
-
-
-
- switch (doc.data()["Club"]) {
-  case "M.C.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(mca1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "O.S.B.B.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(osbba1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "U.S.M.A":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(usma1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "O.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(ob1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "C.R.B.D.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(crbdb1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "W.O.B":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(wob1);
-   cell5.appendChild(cell5Text);
-    break;
-  case "C.S.C.D.K":
-  var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(cscdk1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "I.R.B.B.A":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(irbba1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "C.S.M.B.B.O":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(csmbbo1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "U.S.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(uss1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "R.C.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(rcb1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "E.S.C":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(esc1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "A.S.O.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(asob1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "O.M.S.M":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(omsm1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "A.B.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(abs1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "N.A.H.D":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(nahd1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "P.S.E":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(pse1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "N.B.S":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(nbs1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "T.R.A.D":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(trad1);
-   cell5.appendChild(cell5Text);
-    break;
-    case "U.S.M.B":
-    var cell5 = document.createElement("td");
-   var cell5Text = document.createTextNode(usmb1);
-   cell5.appendChild(cell5Text);
-    break;
-}
-
- var cell6 = document.createElement("td");
- var cell6Text = document.createTextNode(doc.data()["Nom"]);
- cell6.appendChild(cell6Text);
-
- var cell7 = document.createElement("td");
- var cell7Text = document.createTextNode(doc.data()["Président"]);
- cell7.appendChild(cell7Text);
-
-
-
- row.appendChild(cell1);
- row.appendChild(cell2); 
- row.appendChild(cell6);
- row.appendChild(cell3);
-
- row.appendChild(cell5);
-
- row.appendChild(cell7);
-
+   var cell1 = document.createElement("td");
+   var cell1Text = document.createTextNode((++cmp1));
+   cell1.appendChild(cell1Text);
  
- var update = document.createElement("button");
+   var cell2 = document.createElement("td");
+   var cell2Text = document.createTextNode(doc.Club);
+   cell2.appendChild(cell2Text);
+ 
+   var cell3 = document.createElement("td");
+   var cell3Text = document.createTextNode(doc.email);
+   cell3.appendChild(cell3Text);
+ 
+   var cell5 = document.createElement("td");
+   var cell5Text = document.createTextNode(`${clubac[0].Nom} ${clubac[0].Prenom}`);
+   cell5.appendChild(cell5Text);
+   var cell05 = document.createElement("td");
+   var cell05Text = document.createTextNode(`${clubhc[0].Nom} ${clubhc[0].Prenom}`);
+   cell05.appendChild(cell05Text);
+  
+   var cell6 = document.createElement("td");
+   var cell6Text = document.createTextNode(doc.Nom);
+   cell6.appendChild(cell6Text);
+ 
+   var cell7 = document.createElement("td");
+   var cell7Text = document.createTextNode(doc.Président);
+   cell7.appendChild(cell7Text);
+   var cell07 = document.createElement("td");
+   var cell07Text = document.createTextNode(doc.Salle);
+   cell07.appendChild(cell07Text);
+ 
+ 
+   row.appendChild(cell1);
+   
+   row.appendChild(cell2);
+   row.appendChild(cell6);
+   row.appendChild(cell3);
+   row.appendChild(cell05);
+   row.appendChild(cell5);
+  
+   row.appendChild(cell7);
+   row.appendChild(cell07);
+   
+var update = document.createElement("button");
  update.innerHTML = "Modifier";
  update.onclick = function(){
    Gett(testRowIndex,doc.id);
@@ -1032,15 +863,15 @@ flatpickr("#fond", {
 
 
    tBody2.appendChild(row);
-   
  
- }, error => {
-   console.log(error.message);
- }
- );
+   
+   }, error => {
+     console.log(error.message);
+   }
+   );
 //-----------------------------------------------Consulter Classment------------------------------------//
 querySnapshot.forEach(doc => {
-   var testRowIndex1 = clubclass.push([doc.data()["Club"],doc.data()["Défaites"],doc.data()["Victoires"],,doc.data()["PP"],doc.data()["PA"],doc.data()["PC"]]) -1 ;
+   var testRowIndex1 = clubclass.push([doc.data()["Club"],doc.data()["Défaites"],doc.data()["Victoires"],doc.data()["PP"],doc.data()["PA"],doc.data()["PC"]]) -1 ;
    var row = document.createElement("tr");
  
    var cell1 = document.createElement("td");
@@ -1072,7 +903,7 @@ querySnapshot.forEach(doc => {
    cell7.appendChild(cell7Text);
 
    var cell8 = document.createElement("td");
-   var cell8Text = document.createTextNode((doc.data()["Victoires"])/(doc.data()["Défaites"]+doc.data()["Victoires"]));
+   var cell8Text = document.createTextNode(((doc.data()["Victoires"])/(doc.data()["Défaites"]+doc.data()["Victoires"])).toFixed(2));
    cell8.appendChild(cell8Text);
 
    var cell9 = document.createElement("td");
@@ -1129,10 +960,9 @@ function Gett(index,id) {
 // doc.data() is never undefined for query doc snapshots
 clubnom.value = clubnames[index][0];
 fond.value = clubnames[index][1];
-entraineur.value =clubnames[index][3];
-nom.value = clubnames[index][4];
-president.value = clubnames[index][5];
-ville.value =clubnames[index][7];
+nom.value = clubnames[index][3];
+president.value = clubnames[index][4];
+ville.value=clubnames[index][6];
 cle.value=id;
 
 
@@ -1161,16 +991,14 @@ async function update() {
 
   const washingtonRef = doc(db, "Equipe", i);
 
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 await updateDoc(washingtonRef, {
            "Club" : clubnom.value,
-           "Date de fondation": fond.value,
-           "Défaites": parseInt(defaites.value),
-           "Entraineur": entraineur.value,
+           "Date de fondation":new Date(dateFormat(fond.value, "MM/dd/yyyy") ).toLocaleDateString("fr-FR", options) ,
            "Nom": nom.value,
            "Président":president.value,
-           "Victoires": parseInt(victoires.value),
-           "Ville": ville.value
+           "Salle": ville.value
 }).then(()=>{
              alert("Mise à jour effectuée avec succès");
              location.reload(true);
@@ -1236,8 +1064,24 @@ search.addEventListener("keyup", function (event) {
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Entraineur") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
+    if (searchbox.value == "President") {
+          row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
+    ?(row.style.display = "")
+    : (row.style.display = "none");
+    }
+    if (searchbox.value == "nom") {
+          row.querySelectorAll("td")[2].textContent.toLowerCase().startsWith(q)
+    ?(row.style.display = "")
+    : (row.style.display = "none");
+    }
+
+  })
+})
+searchxx.addEventListener("keyup", function (event) {
+  const q = event.target.value.toLowerCase();
+  rows.forEach((row) => {
+    if (searchbox.value == "Club") {
+          row.querySelectorAll("td")[1].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
@@ -1246,13 +1090,8 @@ search.addEventListener("keyup", function (event) {
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchbox.value == "Ville") {
-          row.querySelectorAll("td")[8].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
     if (searchbox.value == "nom") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
+          row.querySelectorAll("td")[2].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
@@ -1267,23 +1106,13 @@ searchx.addEventListener("keyup", function (event) {
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchboxx.value == "Entraineur") {
-          row.querySelectorAll("td")[4].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
     if (searchboxx.value == "President") {
           row.querySelectorAll("td")[6].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
-    if (searchboxx.value == "Ville") {
-          row.querySelectorAll("td")[8].textContent.toLowerCase().startsWith(q)
-    ?(row.style.display = "")
-    : (row.style.display = "none");
-    }
     if (searchboxx.value == "nom") {
-          row.querySelectorAll("td")[5].textContent.toLowerCase().startsWith(q)
+          row.querySelectorAll("td")[2].textContent.toLowerCase().startsWith(q)
     ?(row.style.display = "")
     : (row.style.display = "none");
     }
@@ -1409,17 +1238,17 @@ var Horaire = Timestamp.fromDate(ho);
 //-------------------Add function----------------//
 async function Add(url) {
    var ref = collection(db, "Equipe");
+   var ref2 = collection(db, "Entraineur");
 if (clubnom2.value == "" || nom2.value=="" || president2.value =="" ) {
-  alert("Club , Nom et Prisident sont obligatoire")
+  alert("Club , Nom et Président sont obligatoire")
 } else {
      const docRef = await addDoc(
        ref,{
            "Club" : clubnom2.value,
-           "Date de fondation": fond2.value,
-          "Defaites": 0,
-          "Entraineur": entraineur2.value,
+           "Email": fond2.value,
+           "Défaites": 0,
            "Nom": nom2.value,
-           "President":president2.value,
+           "Président":president2.value,
            "Victoires": 0,
            "Salle": ville2.value,
            "URL" : url,
@@ -1429,15 +1258,44 @@ if (clubnom2.value == "" || nom2.value=="" || president2.value =="" ) {
        }
    ).then(()=>{
        alert(`Équipe ${clubnom2.value} ajoutée avec succès !`);
-       clubnom2.value ="";
-       fond2.value="";
-       entraineur2.value="";
-       nom2.value="";
-       president2.value="";
-       ville2.value="";
+
    })
    .catch((error)=>{
        alert(`L'équipe ${clubnom2.value} n'a pas pu être ajoutée !`+error);
+   });
+   const docRef2 = await addDoc(
+       ref2,{
+           "Club" : clubnom2.value,
+           "DN": "",
+           "Fonction": "AC",
+           "Nom": "",
+           "ID": "",
+           "LN": "",
+           "Prenom": ville2.value,
+          
+       }
+   ).then(()=>{
+   })
+   .catch((error)=>{
+   });
+   const docRef3 = await addDoc(
+       ref2,{
+           "Club" : clubnom2.value,
+           "DN": "",
+           "Fonction": "HC",
+           "Nom": "",
+           "ID": "",
+           "LN": "",
+           "Prenom": ville2.value,
+          
+       }
+   ).then(()=>{
+    clubnom2.value ="";
+       fond2.value="";
+       nom2.value="";
+       president2.value="";
+   })
+   .catch((error)=>{
    });
 }
 
@@ -1459,7 +1317,7 @@ var myimg1 = document.getElementById('myimg1');
 var proglab1 = document.getElementById('upprogress1');
 var selbtn1 = document.getElementById('selbtn1');
 var upbtn1 = document.getElementById('upbtn1');
-var idIMG = document.getElementById('idIMG');
+var domicilem = document.getElementById('domicilem');
 
 var input1 = document.createElement('input');
 input1.type = 'file';
@@ -1506,7 +1364,7 @@ async function UploadProcess1(){
 const storage = getStorage();
 
 const storageRef = sRef(storage, "ImageMatchMOU/"+ImgName);
-if (idIMG.value=="") {
+if (domicilem.value=="") {
   alert("ID est obligatoire !")
 } else {
   const UploasTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
@@ -1538,12 +1396,12 @@ var Horaire = Timestamp.fromDate(ho);
 
 
     var ref = collection(db, "ImageTeams");
-    if (idIMG.value=="") {
+    if (domicilem.value=="") {
       alert("ID est obligatoires !")
     } else {
       const docRef = await addDoc(
     ref,{
-         id: idIMG.value,
+         ID: domicilem.value,
          Name: name,
          Date : Horaire,
          URL: url
